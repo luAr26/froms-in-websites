@@ -25,6 +25,48 @@
       <input type="password" name="password" id="password" required />
       <label for="date">Date</label>
       <input type="date" name="date" id="date" required />
+      <hr />
+      <h2>How should we verify your account?</h2>
+      <div class="form-control-inline">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-text-message"
+          value="sms"
+        />
+        <label for="verify-text-message">Via text message(SMS)</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-phone" value="phone" />
+        <label for="verify-phone">Via phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-email" value="email" />
+        <label for="verify-email">Via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="agree-terms" name="terms" />
+        <label for="agree-terms">Agree to terms?</label>
+      </div>
+      <div class="form-control-inline">
+        <input
+          type="checkbox"
+          id="contact-email"
+          name="contact"
+          value="contact-email"
+        />
+        <label for="contact-email">Contact me via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input
+          type="checkbox"
+          id="contact-phone"
+          name="contact"
+          value="contact-phone"
+        />
+        <label for="contact-phone">Contact me via phone</label>
+      </div>
+      <hr />
       <button>Submit</button>
     </form>
   </body>
