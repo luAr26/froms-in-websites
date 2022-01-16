@@ -74,6 +74,10 @@ textarea:focus {
   border-color: rgb(32, 5, 63);
 }
 
+textarea {
+  resize: none;
+}
+
 button {
   font: inherit;
   display: block;
