@@ -31,7 +31,13 @@
             </li>
             <li>
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                minlength="7"
+              />
             </li>
           </ul>
         </section>
@@ -46,11 +52,20 @@
                 step="0.5"
                 id="number"
                 required
+                min="18"
+                max="100"
               />
             </li>
             <li>
               <label for="date">Birthday</label>
-              <input type="date" name="date" id="date" required />
+              <input
+                type="date"
+                name="date"
+                id="date"
+                required
+                min="1921-01-01"
+                max="2003-01-01"
+              />
             </li>
             <li>
               <label for="favorite-color">What's your favorite color?</label>
@@ -75,6 +90,7 @@
                 name="verify"
                 id="verify-text-message"
                 value="sms"
+                required
               />
               <label for="verify-text-message">Via text message(SMS)</label>
             </li>
@@ -84,6 +100,7 @@
                 name="verify"
                 id="verify-phone"
                 value="phone"
+                required
               />
               <label for="verify-phone">Via phone call</label>
             </li>
@@ -93,6 +110,7 @@
                 name="verify"
                 id="verify-email"
                 value="email"
+                required
               />
               <label for="verify-email">Via email</label>
             </li>
