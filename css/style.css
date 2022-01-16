@@ -93,6 +93,18 @@ button:hover {
   border-color: var(--button-color);
 }
 
+button[type="reset"] {
+  --button-color: rgb(255, 42, 42);
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+}
+
+button[type="reset"]:hover {
+  --button-color: rgb(251, 102, 102);
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+}
+
 .form-control-inline {
   display: flex;
   align-items: center;
@@ -111,4 +123,9 @@ button:hover {
 
 .form-control-inline label:hover {
   cursor: pointer;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1.6rem;
 }
